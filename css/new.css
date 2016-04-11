@@ -1860,6 +1860,16 @@
   margin-top: 10px;
 }
 
+.hotel-comment--close {
+  float: right;
+  color: #212121;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
 @media screen and (max-width: 767px) {
   .hotel-selectdate--save {
     display: block;
@@ -2698,8 +2708,8 @@
   }
 
   .hotel-slider .slick-dots button {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
   }
 
   #hotel > .container {

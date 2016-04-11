@@ -176,6 +176,15 @@
 		}
 	}
 }
+.hotel-comment--close{
+	float:right;
+	color:#212121;
+	background:transparent;
+	cursor: pointer;
+	border:none;
+	box-shadow: none;
+	padding:0;
+}
 @media screen and (max-width:767px){
 	.hotel-selectdate--save{
 		display: block;

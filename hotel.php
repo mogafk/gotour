@@ -10,7 +10,10 @@
 
 <nav id="hotel-comment" class="navmenu navmenu-default navmenu-fixed-right offcanvas" role="navigation">
   <div class="hotel-addcomment-bar">
-    <h3>Добавить отзыв</h3>
+    <h3>
+    Добавить отзыв 
+    <button href="#" class="visible-xs hotel-comment--close" data-toggle="offcanvas" data-target="#hotel-comment" data-canvas="#site-wrap"><i class="fa fa-times"></i></button>
+    </h3>
     <form class="hotel-addcomment-form">
       <div class="form-group">
         <input type="text" class="form-control" placeholder="Представтесь">
