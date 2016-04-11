@@ -61,6 +61,8 @@
 		</div>
 		<div class="hidden-xs col-md-4 col-sm-4 text-left">
 			<a class="header-link" href="/?p=about#footer-map">Контакты</a>
+			<br>
+			<span class="header-phone">8 800 500-53-16</span>
 		</div>
 	</div>
 </header>

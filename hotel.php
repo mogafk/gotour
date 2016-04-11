@@ -12,7 +12,7 @@
   <div class="hotel-addcomment-bar">
     <h3>
     Добавить отзыв 
-    <button href="#" class="visible-xs hotel-comment--close" data-toggle="offcanvas" data-target="#hotel-comment" data-canvas="#site-wrap"><i class="fa fa-times"></i></button>
+    <button href="#" class="hotel-comment--close" data-toggle="offcanvas" data-target="#hotel-comment" data-canvas="#site-wrap"><i class="fa fa-times"></i></button>
     </h3>
     <form class="hotel-addcomment-form">
       <div class="form-group">
