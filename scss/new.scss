@@ -3,6 +3,7 @@
 @import "icons";
 @import "scroll";
 @import "main";
+@import "hotel-new";
 
 .design{
   background:url(../DEMO/design-hotel.jpg) top center no-repeat;
@@ -358,7 +359,7 @@
 .block-hotel-comments{
   background:url(../img/block-hotel-comments.jpg) bottom center no-repeat;
   background-size:cover;
-  margin-top:-60px;
+  margin-top:-35px;
   padding-top:30px;
   position: relative;
   z-index:1;

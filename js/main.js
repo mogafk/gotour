@@ -706,11 +706,13 @@
 })($);
 (function(){
   //roundDateShow();
-  function roundDateShow(){
-    var container = $('.roundtour-date--wrapper');
-    container.show(0).animate({'opacity' : 1},500);
-    $('.main-slider,.main-offer-wrapper,footer').delay(250).addClass('blur');
-    $('.main-slider .slick-dots').css({'z-index' : 2});
+  function roundDateShow(link){
+    if(link.data('open')!='noblur'){
+      var container = $('.roundtour-date--wrapper');
+      container.show(0).animate({'opacity' : 1},500);
+      $('.main-slider,.main-offer-wrapper,footer').delay(250).addClass('blur');
+      $('.main-slider .slick-dots').css({'z-index' : 2});
+    }
     //$('body').css({'height' : container.height()});
 
   }
@@ -831,7 +833,7 @@
     }
   }
   $('.roundtour-date').click(function(){
-    roundDateShow();
+    roundDateShow($(this));
     return false;
   });
   $('.roundtour-date--save').click(function(){

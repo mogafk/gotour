@@ -1,6 +1,6 @@
 /* CSS Document */
-.icons-sprite, .icons-aircraft, .icons-arrow-left, .hotel-slider .slick-prev, .icons-arrow-left_border, .prev-month, .icons-arrow-leftbig_white, .main-offer-slider .slick-prev, .icons-arrow-right, .hotel-slider .slick-next, .icons-arrow-right_border, .next-month, .icons-arrow-rightbig_white, .main-offer-slider .slick-next, .icons-calendar_orange, .icons-close_grey, .icons-close_orange, .icons-home, .icons-hotel-beach, .icons-hotel-info, .icons-hotel-pool, .icons-icons-left, .icons-location, .icons-location_orange, .icons-people-adult_orange, .icons-people-adult_white, .icons-people-adultsm_orange, .icons-people-adultsm_white, .icons-people-children_orange, .icons-people-children_white, .icons-people-childrensm_orange, .icons-people-childrensm_white, .icons-plus_orange, .icons-search, .icons-search_white, .icons-slider, .irs-slider {
-  background-image: url('../img/icons-s8429daee46.png');
+.icons-sprite, .icons-aircraft, .icons-arrow-left, .hotel-slider .slick-prev, .icons-arrow-left_border, .prev-month, .icons-arrow-leftbig_white, .main-offer-slider .slick-prev, .icons-arrow-right, .hotel-slider .slick-next, .icons-arrow-right_border, .next-month, .icons-arrow-rightbig_white, .main-offer-slider .slick-next, .icons-calendar_orange, .icons-close_grey, .icons-close_orange, .icons-home, .icons-hotel-beach, .icons-hotel-info, .icons-hotel-pool, .icons-icons-left, .icons-location, .icons-location_orange, .icons-people-adult_orange, .icons-people-adult_white, .icons-people-adult_yellow, .icons-people-adultsm_orange, .icons-people-adultsm_white, .icons-people-adultsm_yellow, .icons-people-children_orange, .icons-people-children_white, .icons-people-children_yellow, .icons-people-childrensm_orange, .icons-people-childrensm_white, .icons-people-childrensm_yellow, .icons-plus_orange, .icons-plus_yellow, .icons-search, .icons-search_white, .icons-slider, .irs-slider {
+  background-image: url('../img/icons-s3069eb473d.png');
   background-repeat: no-repeat;
 }
 
@@ -118,67 +118,97 @@
   width: 14px;
 }
 
-.icons-people-adultsm_orange {
+.icons-people-adult_yellow {
   background-position: 0 -589px;
+  height: 31px;
+  width: 14px;
+}
+
+.icons-people-adultsm_orange {
+  background-position: 0 -620px;
   height: 37px;
   width: 16px;
 }
 
 .icons-people-adultsm_white {
-  background-position: 0 -626px;
+  background-position: 0 -657px;
   height: 36px;
   width: 16px;
 }
 
+.icons-people-adultsm_yellow {
+  background-position: 0 -693px;
+  height: 37px;
+  width: 16px;
+}
+
 .icons-people-children_orange {
-  background-position: 0 -662px;
+  background-position: 0 -730px;
   height: 21px;
   width: 10px;
 }
 
 .icons-people-children_white {
-  background-position: 0 -683px;
+  background-position: 0 -751px;
+  height: 21px;
+  width: 10px;
+}
+
+.icons-people-children_yellow {
+  background-position: 0 -772px;
   height: 21px;
   width: 10px;
 }
 
 .icons-people-childrensm_orange {
-  background-position: 0 -704px;
+  background-position: 0 -793px;
   height: 25px;
   width: 13px;
 }
 
 .icons-people-childrensm_white {
-  background-position: 0 -729px;
+  background-position: 0 -818px;
   height: 26px;
   width: 13px;
 }
 
+.icons-people-childrensm_yellow {
+  background-position: 0 -844px;
+  height: 25px;
+  width: 13px;
+}
+
 .icons-plus_orange {
-  background-position: 0 -755px;
+  background-position: 0 -869px;
+  height: 10px;
+  width: 10px;
+}
+
+.icons-plus_yellow {
+  background-position: 0 -879px;
   height: 10px;
   width: 10px;
 }
 
 .icons-search {
-  background-position: 0 -765px;
+  background-position: 0 -889px;
   height: 28px;
   width: 30px;
 }
 
 .icons-search_white {
-  background-position: 0 -793px;
+  background-position: 0 -917px;
   height: 23px;
   width: 22px;
 }
 
 .icons-slider, .irs-slider {
-  background-position: 0 -816px;
+  background-position: 0 -940px;
   height: 33px;
   width: 33px;
 }
 
-.icons-sprite, .icons-aircraft, .icons-arrow-left, .hotel-slider .slick-prev, .icons-arrow-left_border, .prev-month, .icons-arrow-leftbig_white, .main-offer-slider .slick-prev, .icons-arrow-right, .hotel-slider .slick-next, .icons-arrow-right_border, .next-month, .icons-arrow-rightbig_white, .main-offer-slider .slick-next, .icons-calendar_orange, .icons-close_grey, .icons-close_orange, .icons-home, .icons-hotel-beach, .icons-hotel-info, .icons-hotel-pool, .icons-icons-left, .icons-location, .icons-location_orange, .icons-people-adult_orange, .icons-people-adult_white, .icons-people-adultsm_orange, .icons-people-adultsm_white, .icons-people-children_orange, .icons-people-children_white, .icons-people-childrensm_orange, .icons-people-childrensm_white, .icons-plus_orange, .icons-search, .icons-search_white, .icons-slider, .irs-slider {
+.icons-sprite, .icons-aircraft, .icons-arrow-left, .hotel-slider .slick-prev, .icons-arrow-left_border, .prev-month, .icons-arrow-leftbig_white, .main-offer-slider .slick-prev, .icons-arrow-right, .hotel-slider .slick-next, .icons-arrow-right_border, .next-month, .icons-arrow-rightbig_white, .main-offer-slider .slick-next, .icons-calendar_orange, .icons-close_grey, .icons-close_orange, .icons-home, .icons-hotel-beach, .icons-hotel-info, .icons-hotel-pool, .icons-icons-left, .icons-location, .icons-location_orange, .icons-people-adult_orange, .icons-people-adult_white, .icons-people-adult_yellow, .icons-people-adultsm_orange, .icons-people-adultsm_white, .icons-people-adultsm_yellow, .icons-people-children_orange, .icons-people-children_white, .icons-people-children_yellow, .icons-people-childrensm_orange, .icons-people-childrensm_white, .icons-people-childrensm_yellow, .icons-plus_orange, .icons-plus_yellow, .icons-search, .icons-search_white, .icons-slider, .irs-slider {
   display: inline-block;
 }
 
@@ -1618,6 +1648,259 @@
   border-color: #313131;
 }
 
+.hotel-search--container {
+  background: url("../img/hotel-search-bg.jpg") top center no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin: -95px 0 20px;
+}
+@media screen and (max-width: 991px) {
+  .hotel-search--container {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hotel-search--container {
+    margin: 0;
+  }
+}
+.hotel-search--form {
+  background: rgba(0, 0, 0, 0.36);
+  padding: 105px 0;
+  color: #fff;
+}
+@media screen and (max-width: 991px) {
+  .hotel-search--form {
+    padding: 70px 0 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hotel-search--form {
+    padding: 15px 0;
+  }
+}
+.hotel-search--form .roundtour-city {
+  font-size: 21px;
+  font-family: 'helveticaneuecyr';
+}
+.hotel-search--form .roundtour-city--select {
+  color: #f6d344;
+  border-color: #f6d344;
+}
+.hotel-search--form .roundtour-city--submenu {
+  left: 140px;
+  top: -10px;
+  font-size: 16px;
+  color: #212121;
+}
+@media screen and (max-width: 767px) {
+  .hotel-search--form .roundtour-city--submenu {
+    left: 105px;
+  }
+}
+.hotel-search--form .roundtour-city--close {
+  top: 10px;
+}
+@media screen and (max-width: 767px) {
+  .hotel-search--form .roundtour-city {
+    font-size: 16px;
+  }
+}
+.hotel-search--form .roundtour-place {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.hotel-search--form .roundtour-place--submenu {
+  color: #212121;
+}
+.hotel-search--form .roundtour-date {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.hotel-search--form .roundtour-people {
+  float: left;
+  padding: 0;
+  width: auto;
+  margin-right: 20px;
+}
+.hotel-search--form .roundtour-people--active {
+  height: 43px;
+  padding: 4px 12px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+@media screen and (max-width: 991px) {
+  .hotel-search--form .roundtour-people--active {
+    height: 53px;
+    padding: 6px 12px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hotel-search--form .roundtour-people--active {
+    float: none;
+  }
+}
+.hotel-search--form .roundtour-people--addadults, .hotel-search--form .roundtour-people--addchildrens {
+  height: 43px;
+  border-color: #f6d344;
+  color: #f6d344;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  line-height: 43px;
+}
+.hotel-search--form .roundtour-people--addadults .icon, .hotel-search--form .roundtour-people--addchildrens .icon {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+.hotel-search--form .roundtour-people--addadults .text, .hotel-search--form .roundtour-people--addchildrens .text {
+  margin: 16px 5px 0 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+@media screen and (max-width: 991px) {
+  .hotel-search--form .roundtour-people--addadults .text, .hotel-search--form .roundtour-people--addchildrens .text {
+    margin: 20px 10px 0 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .hotel-search--form .roundtour-people--addadults, .hotel-search--form .roundtour-people--addchildrens {
+    height: 53px;
+    line-height: 43px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hotel-search--form .roundtour-people--addadults, .hotel-search--form .roundtour-people--addchildrens {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+}
+.hotel-search--form .roundtour-people--addadults .icon {
+  margin-top: 5px;
+}
+@media screen and (max-width: 991px) {
+  .hotel-search--form .roundtour-people--addadults .icon {
+    margin-top: 7px;
+  }
+}
+.hotel-search--form .roundtour-people--addchildrens .icon {
+  margin-top: 10px;
+}
+@media screen and (max-width: 991px) {
+  .hotel-search--form .roundtour-people--addchildrens .icon {
+    margin-top: 12px;
+  }
+}
+.hotel-search--send {
+  position: absolute;
+  background: #f6c80d;
+  color: #303030;
+  font-family: 'Roboto';
+  font-weight: 700;
+  height: 43px;
+  line-height: 40px;
+  text-align: center;
+  padding: 0 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  min-width: 120px;
+  font-size: 16px;
+  display: inline-block;
+}
+@media screen and (max-width: 991px) {
+  .hotel-search--send {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    height: auto;
+    line-height: 100%;
+  }
+}
+.hotel-search--date {
+  display: none;
+}
+.hotel-search--date .roundtour-date--wrapper {
+  position: relative;
+  height: auto;
+  display: block;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  margin-top: 0;
+  background: rgba(0, 0, 0, 0.89);
+}
+.hotel-search--date .roundtour-date--content {
+  top: 0;
+  padding: 0;
+}
+.hotel-search--date .roundtour-date--content h4 {
+  margin: 0;
+  font-size: 17px;
+}
+@media screen and (max-width: 991px) {
+  .hotel-search--date .roundtour-date--content h4 {
+    margin-bottom: 20px;
+  }
+}
+.hotel-search--date .roundtour-date--top {
+  background: #000;
+  padding: 35px 0 30px;
+}
+.hotel-search--date .roundtour-date--night {
+  margin-top: -6px;
+}
+.hotel-search--date .roundtour-date--days {
+  padding: 40px 0;
+}
+.hotel-search--date .roundtour-date--save {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .hotel-selectdate--save {
+    display: block;
+    width: 100%;
+  }
+
+  .hotel-comment--author {
+    padding-left: 15px;
+  }
+
+  .hotel-comment--date {
+    padding-left: 15px;
+  }
+}
+.tour-list--logo {
+  margin-right: 7px;
+  float: left;
+}
+.tour-list--logo + span {
+  overflow: hidden;
+}
+
+.tour-list-item_vip {
+  background: #dbf4fa;
+  border-color: #dbf4fa;
+}
+
+.form-hotelsearch {
+  position: relative;
+  z-index: 3;
+}
+
+@media screen and (min-width: 992px) {
+  .no-leftpadding {
+    padding-left: 0;
+  }
+
+  .no-rightpadding {
+    padding-right: 0;
+  }
+}
 .design {
   background: url(../DEMO/design-hotel.jpg) top center no-repeat;
   position: absolute;
@@ -1990,7 +2273,7 @@
 .block-hotel-comments {
   background: url(../img/block-hotel-comments.jpg) bottom center no-repeat;
   background-size: cover;
-  margin-top: -60px;
+  margin-top: -35px;
   padding-top: 30px;
   position: relative;
   z-index: 1;
@@ -2440,9 +2723,6 @@
   }
 
   #hotel #info {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-    max-width: 750px;
     width: 100%;
     margin: 0 auto;
   }

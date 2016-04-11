@@ -190,246 +190,335 @@
 			<li><a href="#comments" data-toggle="tab">Отзывы клиентов <span>7</span></a></li>
 			<li><a href="#map" data-toggle="tab">Отель на карте</a></li>
 		</ul>
+  </div>
+	<!-- Tab panes -->
+	<div class="tab-content">
+    <div class="visible-xs">
+      <a href="#" class="tab-xs-header tab-xs-header_active">Описание и туры <span class="icon"><i class="fa fa-angle-up"></i></span></a>
+    </div>
+		<div class="tab-pane fade in active" id="info">
+      <div class="hotel-search--container">
+        <div class="hotel-search--form">
+          <form action="#" class="form-hotelsearch">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="roundtour-city">
+                    Город вылета: <a href="#" class="roundtour-city--select">Москва</a>
+                    <div class="roundtour-city--submenu">
+                      <input type="text" class="form-control roundtour-city--search" value="Москва">
+                      <a href="#" class="roundtour-city--close"><span class="icons-close_orange"></span></a>
+                      <div class="roundtour-city--wrapper scrollbar-inner">
+                        <ul class="roundtour-city--list">
+                          <li>Москва</li>
+                          <li>Санкт-Петербург</li>
+                          <li>Абакан</li>
+                          <li>Актау</li>
+                          <li>Актобе</li>
+                          <li>Алматы</li>
+                          <li>Анадырь</li>
+                          <li>Анапа</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="form-group roundtour-place--container">
+                    <a href="#" class="roundtour-place">
+                      <span class="icon icons-location_orange"></span>
+                      <span class="text">Где хотите отдохнуть?</span>
+                    </a>
+                    <div class="roundtour-place--submenu">
+                      <input type="text" class="form-control roundtour-place--search" value="" placeholder="Где хотите отдохнуть?">
+                      <span class="roundtour-place--searchicon icons-location_orange"></span>
+                      <div class="roundtour-place--wrapper scrollbar-inner">
+                        <ul class="roundtour-place--list">
+                          <?php
+                          $icons = array('','home','location','aircraft');
+                          $curort = array('','Анапа','Аналипси','Evason Ana Mandara','Hostal Santa Ana','Ana Mandara Hue','Apatrments Ana');
+                          $curortCountry = array('','Россия','Греция','Испания ЛЛарет-де-Мар','Вьетнам Фуванг','Черногория Котор');
+                          for($i=1;$i<=20;$i++){ ?>
+                          <li>
+                            <div class="roundtour-place--icon"><span class="icons-<?php echo $icons[rand(1,3)]; ?>"></span></div>
+                            <div class="roundtour-place--info">
+                              <h4 class="roundtour-place--curort"><?php echo $curort[rand(1,6)]; ?></h4>
+                              <span class="roundtour-place--country"><?php echo $curortCountry[rand(1,5)]; ?></span>
+                            </div>
+                            <div class="roundtour-place--img"><img src="DEMO/curort<?php echo rand(1,3); ?>.jpg?ver=1.0" alt=""></div>
+                          </li>
+                          <?php } ?>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 no-leftpadding" >
+                  <div class="form-group">
+                    <a href="#" class="roundtour-date hotel-roundtour-date--open" data-open="noblur">
+                      <span class="icon icons-calendar_orange"></span>
+                      <span class="text">
+                        <span class="roundtour-date--months">Выберите дату</span>
+                        <span class="roundtour-date--nights"></span>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-5 col-sm-12 no-leftpadding">
+                  <div class="roundtour-people">
+                    <div class="roundtour-people--active">
+                      <ul class="roundtour-people--adults">
+                        <li>
+                          <a href="#" class="roundtour-people--remove"><i class="fa fa-times"></i></a>
+                          <span class="icons-people-adult_white hidden-xs hidden-sm"></span>
+                          <span class="icons-people-adultsm_white visible-sm visible-xs"></span>
 
-		<!-- Tab panes -->
-		<div class="tab-content">
-      <div class="visible-xs">
-        <a href="#" class="tab-xs-header tab-xs-header_active">Описание и туры <span class="icon"><i class="fa fa-angle-up"></i></span></a>
-      </div>
-			<div class="tab-pane fade in active" id="info">
-        <div class="search-hotel">
-          <div class="search-hotel--header">
-            <h2>
-          		<span>Туры в отель <span class="hidden-xs">из</span></span>
-          		<label class="x-input-dd x-text no-caret closed hidden-xs">
-          			<input type="hidden" placeholder="Выбрать город" value="3">
-          			<sub data-before="Из: ">Санкт Петербурга</sub>
-          				<span style="display: none;">
-          					<i data-value="1">Екатеринбурга</i>
-          					<i data-value="2">Москвы</i>
-          					<i data-value="3" class="selected">Санкт Петербурга</i>
-          					<i data-value="4">Владивостока</i>
-          				</span>
-          		</label>
-            </h2>
-            <label class="x-input-dd x-text no-caret closed visible-xs hotel-xs-city">
-        			<input type="hidden" placeholder="Выбрать город" value="3">
-        			<sub data-before="Откуда: ">Санкт Петербурга</sub>
-        				<span style="display: none;">
-        					<i data-value="1">Екатеринбурга</i>
-        					<i data-value="2">Москвы</i>
-        					<i data-value="3" class="selected">Санкт Петербурга</i>
-        					<i data-value="4">Владивостока</i>
-        				</span>
-        		</label>
-          </div>
-          <div class="search-hotel--filter">
-            <div class="row">
-              <div class="col-md-4 col-sm-5 col-xs-12">
-                <h4 class="search-hotel--titlefield hidden-xs">Начало поездки</h4>
-                <div class="input-group date">
-            			<input type="text" class="form-control hidden-xs" placeholder="">
-            			<input type="text" class="form-control visible-xs" placeholder="Дата">
-                  <span class="input-group-addon">
-                      <i class="fa fa-calendar"></i>
-                  </span>
-        				</div>
-            		<label class="x-input-dd x-text no-caret closed search-hotel--filter_time">
-            			<input type="hidden" value="1">
-            			<sub data-before="На: ">5-7 дней</sub>
-            				<span style="display: none;">
-            					<i data-value="1">5-7 дней</i>
-            					<i data-value="2">7-12 дней</i>
-            					<i data-value="4">более 12 дней</i>
-            				</span>
-            		</label>
-              </div>
-              <div class="col-md-3 col-sm-4 col-xs-12">
-                <h4 class="search-hotel--titlefield hidden-xs">Взрослые</h4>
-                <div class="hidden-xs">
-                  <label class="count-input">
-        						<span class="pull-right minus">-</span>
-        						<span class="pull-left plus">+</span>
-        						<input type="number" step="1" min="1" max="27" value="2">
-        					</label>
-                </div>
-                <div class="col-xs-12">
-                  <label class="x-input-dd x-text no-caret closed">
-              			<input type="hidden" value="1">
-              			<sub data-before="">Все типы питания</sub>
-              				<span style="display: none;">
-              					<i data-value="1">Все типы питания</i>
-              					<i data-value="2">Обед</i>
-              					<i data-value="4">Все включено</i>
-              				</span>
-              		</label>
-                </div>
-                <div class="visible-xs col-xs-12 text-center">
-                  <label class="count-input">
-        						<span class="pull-right minus">-</span>
-        						<span class="pull-left plus">+</span>
-        						<input type="number" step="1" min="1" max="27" value="2">
-        					</label>
+                        </li>
+                        <li>
+                          <a href="#" class="roundtour-people--remove"><i class="fa fa-times"></i></a>
+                          <span class="icons-people-adult_white hidden-xs hidden-sm"></span>
+                          <span class="icons-people-adultsm_white visible-sm visible-xs"></span>
+                        </li>
+                      </ul>
+                      <ul class="roundtour-people--childrens">
+                        <!--
+                        <li>
+                          <a href="#" class="roundtour-people--remove"><i class="fa fa-times"></i></a>
+                          <span class="icons-people-children_white hidden-xs hidden-sm"></span>
+                          <span class="icons-people-childrensm_white visible-sm visible-xs"></span>
+                          <div class="roundtour-people--year">2</div>
+                        </li>
+                        -->
+                      </ul>
+                    </div>
+                    <a href="#" class="roundtour-people--addadults">
+                      <span class="text icons-plus_yellow"></span>
+                      <span class="icon icons-people-adult_yellow hidden-xs hidden-sm"></span>
+                      <span class="icon icons-people-adultsm_yellow visible-sm visible-xs"></span>
+                    </a>
+                    <div class="roundtour-people--addchildrens-wrapper">
+                      <a href="#" class="roundtour-people--addchildrens">
+                        <span class="text icons-plus_yellow"></span>
+                        <span class="icon icons-people-children_yellow hidden-xs hidden-sm"></span>
+                        <span class="icon icons-people-childrensm_yellow visible-sm visible-xs"></span>
+                      </a>
+                      <div class="roundtour-people--years scrollbar-inner">
+                        <ul>
+                          <li>1 год</li>
+                          <li>2 года</li>
+                          <li>3 года</li>
+                          <li>4 года</li>
+                          <li>5 лет</li>
+                          <li>6 лет</li>
+                          <li>7 лет</li>
+                          <li>8 лет</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn hotel-search--send">Найти тур</button>
                 </div>
               </div>
-              <div class="col-md-3 hidden-sm hidden-xs">
-                <div class="search-hotel--children">
-                  <label class="x-input-check">
-            				<input type="checkbox">
-            				<i><i class="fa fa-check"></i></i>
-            				<span>А также дети</span>
-            			</label>
+            </div>
+          </form>
+        </div>
+        <!-- select date -->
+        <div class="hotel-search--date">
+          <div class="roundtour-date--wrapper">
+            <div class="roundtour-date--content">
+              <div class="roundtour-date--top">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-3 no-rightpadding"><h4>Выберите количество ночей:</h4></div>
+                    <div class="col-md-8">
+                      <ul class="roundtour-date--night">
+                        <?php for($i=2;$i<=20;$i++){ ?>
+                        <li class="<?php if($i==7) {echo 'active';} ?>"><?php echo $i ?></li>
+                        <?php } ?>
+                        <li>более 20</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-2 col-sm-3 col-xs-12">
-                <div class="xs-padding">
-                  <a href="#" class="btn btn-green btn-block">Найти</a>
+              <div class="roundtour-date--days">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-3"><h4>Выберите период отдыха:</h4></div>
+                    <div class="col-md-8">
+                      <div class="roundtour-date--month"></div>
+                      <input type="hidden" class="select-date" value="">
+                    </div>
+                    <div class="col-md-8 col-md-offset-3">
+                      <div class="roundtour-date--save">
+                        <a href="#" class="btn btn-black hotel-selectdate--save">Сохранить</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div id="hotel-tours-info" class="hotel-tours-info hidden-xs">В тур включен перелет, проживание в отеле с выбранным типом питания, медицинская страховка, трансфер. Наша цена честная и финальная: она уже включает все необходимые сборы от туроператоров.</div>
-        <hr class="hotel-hr">
-        <div class="col-md-12 hotel-table--header clearfix hidden-xs hidden-sm">
-					<div class="col-sm-5 col-md-4 col-lg-3">Дата</div>
-					<div class="col-sm-2 col-md-2 col-lg-2">Питание</div>
-					<div class="col-sm-2 col-md-2 col-lg-3">Номер</div>
-					<div class="hidden-sm col-md-2 col-lg-2">Туроператор</div>
-					<div class="col-sm-3 col-md-2 col-lg-2"></div>
-				</div>
-				<?for($i=0;$i<5;$i++):?>
-					<div class="col-md-12 tour-list-item clearfix hotel-table">
-						<div class="col-xs-6 col-sm-3 col-md-2 pull-right" style="min-height:50px;">
-							<div class="price pull-right text-left">28&nbsp;500&nbsp;<i class="fa fa-rub"></i><small>на всех</small></div>
-							<div class="btn btn-orange">Купить сейчас</div>
-						</div>
-						<div class="col-xs-6 col-sm-5 col-md-4 col-lg-3">
-							<div class="xs-pull-left"><span class="date">10.12</span>&nbsp;<span class="hidden-xs"> вылет из Екатеринбурга</span></div>
-							<div class="xs-pull-left"><span class="date"><b class="visible-xs-inline-block">- </b>16.12</span>&nbsp;<span class="hidden-xs"> вылет обратно, 7 ночей</span></div>
-							<div class="visible-xs clearfix"></div>
-							<div class="visible-xs">7 ночей</div>
-						</div>
-						<div class="col-xs-6 col-sm-2 col-md-2 info">
-							<span>Завтраки</span>
-						</div>
-						<div class="hidden-xs col-sm-2 col-md-2 col-lg-3 info">
-							<span>Номер Стандартный.<br class="hidden-lg"> 2 взрослых</span>
-						</div>
-						<div class="hidden-xs hidden-sm col-md-2 info">
-							<span>Веди тур</span>
-						</div>
-					</div>
-				<?endfor;?>
-        <div class="clearfix"></div>
-        <h2 class="clearfix">Отзывы об отеле</h2>
-        <div class="hotel-comments--list">
-          <?php for($i=1;$i<=5;$i++){ ?>
-          <div class="hotel-comment--item">
-            <div class="row">
-              <div class="col-md-3 col-sm-3 col-xs-12">
-                <div class="col-xs-8">
-                  <h4 class="hotel-comment--author">Иванов Илья</h4>
-                  <span class="hotel-comment--date">28.08.15</span>
+        <!-- end -->
+      </div>
+      <div class="container">
+        <div class="container-white">
+          <div id="hotel-tours-info" class="hotel-tours-info hidden-xs">В тур включен перелет, проживание в отеле с выбранным типом питания, медицинская страховка, трансфер. Наша цена честная и финальная: она уже включает все необходимые сборы от туроператоров.</div>
+          <hr class="hotel-hr">
+          <div class="col-md-12 hotel-table--header clearfix hidden-xs hidden-sm">
+    				<div class="col-sm-5 col-md-4">Дата</div>
+    				<div class="col-sm-2 col-md-2">Питание</div>
+    				<div class="col-sm-2 col-md-2">Номер</div>
+    				<div class="hidden-sm col-md-2">Туроператор</div>
+    				<div class="col-sm-3 col-md-2"></div>
+    			</div>
+    			<?for($i=0;$i<3;$i++):?>
+    				<div class="col-md-12 tour-list-item clearfix hotel-table <?php if($i==2): echo 'tour-list-item_vip'; endif; ?>">
+    					<div class="col-xs-6 col-sm-3 col-md-2 pull-right" style="min-height:50px;">
+    						<div class="price pull-right text-left">28&nbsp;500&nbsp;<i class="fa fa-rub"></i><small>на всех</small></div>
+    						<div class="btn btn-orange">Купить сейчас</div>
+    					</div>
+    					<div class="col-xs-6 col-sm-5 col-md-4 no-rightpadding">
+    						<div class="xs-pull-left"><span class="date">10.12</span>&nbsp;<span class="hidden-xs"> вылет из Екатеринбурга</span></div>
+    						<div class="xs-pull-left"><span class="date"><b class="visible-xs-inline-block">- </b>16.12</span>&nbsp;<span class="hidden-xs"> вылет обратно, 7 ночей</span></div>
+    						<div class="visible-xs clearfix"></div>
+    						<div class="visible-xs">7 ночей</div>
+    					</div>
+    					<div class="col-xs-6 col-sm-2 col-md-2 info">
+    						<span>Завтраки</span>
+    					</div>
+    					<div class="hidden-xs col-sm-2 col-md-2 info">
+    						<span>Номер Стандартный.<br class="hidden-lg"> 2 взрослых</span>
+    					</div>
+    					<div class="hidden-xs hidden-sm col-md-2 info">
+                <?php if($i==2): ?>
+                <span class="tour-list--logo"><img src="DEMO/tour-logo.png" alt=""></span>
+                <?php endif; ?>
+    						<span>Веди тур</span>
+    					</div>
+    				</div>
+    			<?endfor;?>
+          <div class="clearfix"></div>
+          <h2 class="clearfix">Отзывы об отеле</h2>
+          <div class="hotel-comments--list">
+            <?php for($i=1;$i<=5;$i++){ ?>
+            <div class="hotel-comment--item">
+              <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                  <div class="row">
+                    <div class="col-sm-12 col-xs-8">
+                      <h4 class="hotel-comment--author">Иванов Илья</h4>
+                      <span class="hotel-comment--date">28.08.15</span>
+                    </div>
+                    <div class="hotel-comment--rating col-sm-12 col-xs-4">7,8 из 10</div>
+                  </div>
                 </div>
-                <div class="hotel-comment--rating col-xs-4">7,8 из 10</div>
-              </div>
-              <div class="col-md-9 col-sm-9 col-xs-12">
-                <div class="hotel-comment--text">
-                  <p>Ассортиментная политика предприятия позиционирует социометрический рекламный макет. Организация службы маркетинга тормозит социометрический повторный кон</p>
+                <div class="col-md-9 col-sm-9 col-xs-12 no-leftpadding">
+                  <div class="hotel-comment--text">
+                    <p>Ассортиментная политика предприятия позиционирует социометрический рекламный макет. Организация службы маркетинга тормозит социометрический повторный кон</p>
+                  </div>
+                  <a href="#" class="hotel-comment--fulllink hidden-xs">Читать отзыв</a>
                 </div>
-                <a href="#" class="hotel-comment--fulllink hidden-xs">Читать отзыв</a>
               </div>
             </div>
+            <?php } ?>
           </div>
-          <?php } ?>
-        </div>
-        <div class="">
-					<h2 class="clearfix">Уютный отель на берегу моря</h2>
-					<div class="row hotel-xs-padding">
-						<div class="col-sm-12 col-md-9 col-lg-9">
-							<p>Тур "Наследие великих цивилизаций" поражает воображение! Целых 3 дня путешествия посвящены загадочному Стамбулу. Затем Вы побываете в Чанаккале, где разворачивалось действие «Илиады», увидите культурные святыни, открытые во время раскопок Шлиманна! Вас ждут руины города Пергам, «хлопковый замок» в Памуккале, термальные ванны Клеопатры, древний город Иераполис, экскурсия по Анталии и поездка к невероятному водопаду!</p>
-							<p>В стоимость тура включены: перелёт, проживание в отелях с завтраками, трансферы на комфортабельном автобусе, экскурсии, услуги гида.</p>
-						</div>
-						<div class="hidden-sm col-md-3 col-lg-3 weather">
-							<div class="temp" data-operator="+" style="background-image:url(/img/weather-1.png)">35</div>
-							<div class="desc">Переменная облачность, без осадков</div>
-						</div>
-					</div>
-					<div id="hotel-options">
-            <div class="col-xs-12">
-              <div class="hotel-options-xs-select--wrapper">
-                <a href="#" class="visible-xs hotel-options-xs-select">
-                  <span class="text">Инфраструктура</span>
-                  <span class="icon"><i class="fa fa-caret-down"></i></span>
-                </a>
-    						<!-- Nav tabs -->
-    						<ul class="nav hotel-options-xs-select--submenu">
-    							<li class="active"><a href="#opt-1" data-toggle="tab">Инфраструктура</a></li>
-    							<li><a href="#opt-2" data-toggle="tab">Платно</a></li>
-    							<li><a href="#opt-3" data-toggle="tab">В номере</a></li>
-    							<li><a href="#opt-4" data-toggle="tab">Типы комнат</a></li>
-    						</ul>
+          <div class="">
+    				<h2 class="clearfix">Уютный отель на берегу моря</h2>
+    				<div class="row hotel-xs-padding">
+    					<div class="col-sm-12 col-md-9 col-lg-9">
+    						<p>Тур "Наследие великих цивилизаций" поражает воображение! Целых 3 дня путешествия посвящены загадочному Стамбулу. Затем Вы побываете в Чанаккале, где разворачивалось действие «Илиады», увидите культурные святыни, открытые во время раскопок Шлиманна! Вас ждут руины города Пергам, «хлопковый замок» в Памуккале, термальные ванны Клеопатры, древний город Иераполис, экскурсия по Анталии и поездка к невероятному водопаду!</p>
+    						<p>В стоимость тура включены: перелёт, проживание в отелях с завтраками, трансферы на комфортабельном автобусе, экскурсии, услуги гида.</p>
+    					</div>
+    					<div class="hidden-sm col-md-3 col-lg-3 weather">
+    						<div class="temp" data-operator="+" style="background-image:url(/img/weather-1.png)">35</div>
+    						<div class="desc">Переменная облачность, без осадков</div>
+    					</div>
+    				</div>
+    				<div id="hotel-options">
+              <div class="col-xs-12">
+                <div class="hotel-options-xs-select--wrapper">
+                  <a href="#" class="visible-xs hotel-options-xs-select">
+                    <span class="text">Инфраструктура</span>
+                    <span class="icon"><i class="fa fa-caret-down"></i></span>
+                  </a>
+      						<!-- Nav tabs -->
+      						<ul class="nav hotel-options-xs-select--submenu">
+      							<li class="active"><a href="#opt-1" data-toggle="tab">Инфраструктура</a></li>
+      							<li><a href="#opt-2" data-toggle="tab">Платно</a></li>
+      							<li><a href="#opt-3" data-toggle="tab">В номере</a></li>
+      							<li><a href="#opt-4" data-toggle="tab">Типы комнат</a></li>
+      						</ul>
+                </div>
               </div>
-            </div>
-						<!-- Tab panes -->
-						<div class="tab-content">
-							<div class="tab-pane active" id="opt-1">
-                <ul class="hotel-options-list">
-                  <li>3 ресторана</li>
-                  <li>3 бара</li>
-                  <li>2 бассейна</li>
-                  <li>Услуги врача</li>
-                </ul>
-							</div>
-							<div class="tab-pane" id="opt-2"></div>
-							<div class="tab-pane" id="opt-3"></div>
-							<div class="tab-pane" id="opt-4"></div>
-						</div>
-					</div>
-					<div id="filters"></div>
+    					<!-- Tab panes -->
+    					<div class="tab-content">
+    						<div class="tab-pane active" id="opt-1">
+                  <ul class="hotel-options-list">
+                    <li>3 ресторана</li>
+                    <li>3 бара</li>
+                    <li>2 бассейна</li>
+                    <li>Услуги врача</li>
+                  </ul>
+    						</div>
+    						<div class="tab-pane" id="opt-2"></div>
+    						<div class="tab-pane" id="opt-3"></div>
+    						<div class="tab-pane" id="opt-4"></div>
+    					</div>
+    				</div>
+    				<div id="filters"></div>
 
-				</div>
-
-			</div>
-      <div class="visible-xs">
-        <a href="#" class="tab-xs-header">Отзывы клиентов <span class="icon"><i class="fa fa-angle-down"></i></span></a>
+    			</div>
+        </div>
       </div>
-			<div class="tab-pane fade" id="comments">
-				<div class="clearfix xs-padding">
-					<h2 class="pull-left">Отзывы клиентов</h2>
-					<button class="btn pull-right" data-recalc="false" data-toggle="offcanvas" data-target="#hotel-comment" data-canvas="#site-wrap">Добавить отзыв</button>
-				</div>
-				<? for($i=0;$i<7;$i++):?>
-				<div class="comment clearfix">
-					<div class="col-xs-6 col-sm-3 col-md-3">
-						<div class="name">Иванов Иван</div>
-						<div class="date">28.08.15</div>
-						<a href="#" class="photos hidden-xs">Фотоотчет</a>
-					</div>
-					<div class="col-xs-6 col-sm-3 col-md-2 pull-right text-right">
-						<p class="gray hidden-xs">Общая оценка:</p>
-						<div class="rating"><b>7,8</b> из 10</div>
-					</div>
-					<div class="visible-xs clearfix"></div>
-					<div class="visible-xs"><br></div>
-					<div class="col-xs-12 col-sm-6 col-md-7">
-						<p>Тестовый текст. Написан для наглядности. Расширяет блок в зависимости от количества текста... Тестовый текст. Написан для наглядности. Расширяет блок в зависимости от количества текста...</p>
-						<p class="gray hidden-xs">Отдыхал: один</p>
-					</div>
-				</div>
-				<? endfor; ?>
+		</div>
+    <div class="visible-xs">
+      <a href="#" class="tab-xs-header">Отзывы клиентов <span class="icon"><i class="fa fa-angle-down"></i></span></a>
+    </div>
+		<div class="tab-pane fade" id="comments">
+      <div class="container">
+        <div class="container-white">
+    			<div class="clearfix xs-padding">
+    				<h2 class="pull-left">Отзывы клиентов</h2>
+    				<button class="btn pull-right" data-recalc="false" data-toggle="offcanvas" data-target="#hotel-comment" data-canvas="#site-wrap">Добавить отзыв</button>
+    			</div>
+    			<? for($i=0;$i<7;$i++):?>
+    			<div class="comment clearfix">
+    				<div class="col-xs-6 col-sm-3 col-md-3">
+    					<div class="name">Иванов Иван</div>
+    					<div class="date">28.08.15</div>
+    					<a href="#" class="photos hidden-xs">Фотоотчет</a>
+    				</div>
+    				<div class="col-xs-6 col-sm-3 col-md-2 pull-right text-right">
+    					<p class="gray hidden-xs">Общая оценка:</p>
+    					<div class="rating"><b>7,8</b> из 10</div>
+    				</div>
+    				<div class="visible-xs clearfix"></div>
+    				<div class="visible-xs"><br></div>
+    				<div class="col-xs-12 col-sm-6 col-md-7">
+    					<p>Тестовый текст. Написан для наглядности. Расширяет блок в зависимости от количества текста... Тестовый текст. Написан для наглядности. Расширяет блок в зависимости от количества текста...</p>
+    					<p class="gray hidden-xs">Отдыхал: один</p>
+    				</div>
+    			</div>
+    			<? endfor; ?>
 
-				<div class="more"><a href="#">Показать еще</a></div>
-			</div>
-      <div class="visible-xs">
-        <a href="#" class="tab-xs-header">Отель на карте <span class="icon"><i class="fa fa-angle-down"></i></span></a>
+    			<div class="more"><a href="#">Показать еще</a></div>
+        </div>
       </div>
-			<div class="tab-pane fade frame-map" id="map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d58730.31270831107!2d60.64912399337177!3d56.83602367647622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1447341222324" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-			</div>
+		</div>
+    <div class="visible-xs">
+      <a href="#" class="tab-xs-header">Отель на карте <span class="icon"><i class="fa fa-angle-down"></i></span></a>
+    </div>
+		<div class="tab-pane fade frame-map" id="map">
+      <div class="container">
+        <div class="container-white">
+    			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d58730.31270831107!2d60.64912399337177!3d56.83602367647622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1447341222324" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
 		</div>
 	</div>
+	
   <div class="block-hotel-comments">
     <div class="container">
       <h3>ОТЗЫВЫ ОБ ОТЕЛЕ GREEN WORLD HOTEL</h3>
