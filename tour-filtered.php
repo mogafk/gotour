@@ -96,13 +96,13 @@
 							<div class="tour-filter--price">
 								<div class="row">
 									<div class="col-md-4 col-sm-5 col-xs-5">
-										<input type="text" class="form-control tourFilterPriceMin" name="priceMin" value="20 000">
+										<input type="text" class="form-control tourFilterPriceMin" name="priceMin" value="10 000">
 									</div>
 									<div class="col-md-1 col-sm-2 col-xs-2 no-leftpadding no-rightpadding">
 										<span class="sep"></span>
 									</div>
 									<div class="col-md-4 col-sm-5 col-xs-5">
-										<input type="text" class="form-control tourFilterPriceMax" name="priceMax" value="88 000">
+										<input type="text" class="form-control tourFilterPriceMax" name="priceMax" value="15 000 000">
 									</div>
 								</div>
 								<div class="tour-filter--price-slider">

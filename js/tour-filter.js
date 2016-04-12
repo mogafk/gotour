@@ -49,7 +49,7 @@ $(document).ready(function(){
 	var $filterSlider = $('.tour-filter-price');
 	$filterSlider.ionRangeSlider({
 		min: 0,
-		max: 100000,
+		max: 15000000,
 		from: filterPrice.setPriceMin(),
 		to: filterPrice.setPriceMax(),
 		type: 'double',
