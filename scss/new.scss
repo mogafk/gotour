@@ -4,6 +4,7 @@
 @import "scroll";
 @import "main";
 @import "hotel-new";
+@import "tour-filter";
 
 .design{
   background:url(../DEMO/design-hotel.jpg) top center no-repeat;
@@ -617,10 +618,26 @@
   }
 
 }
+@media (min-width:1200px) and (max-width: 1440px){
+  #tour-filtered{
+    width:970px;
+    .container{
+      width:970px
+    }
+  }
+  .tour-column{
+    text-align: right;
+    &:nth-child(even){
+      text-align: left
+    }
+  }
+}
 
 .tour-block{
   max-width:480px !important;
-
+  display: inline-block;
+  width:100%;
+  text-align: left;
 }
 .tour-block-new{
   margin-bottom:20px;
@@ -628,11 +645,14 @@
 
 .tour-header{
   min-height:42px;
-  h2{
+  h2,a{
     color:#292929;
     font-size:18px;
     font-weight:900;
     margin:0;
+    &:hover{
+      text-decoration: none;
+    }
   }
 
 }
@@ -657,18 +677,20 @@
 .tour-desc{
   color:#434343;
   font-size:13px;
+  margin-bottom:10px;
 }
 .tour-footer{
   border:1px solid #cecece;
   border-top:none;
-  padding:15px 0;
+  padding:5px 0 15px;
   overflow: hidden;
   background:#fff;
 }
 .tour-eat{
   font-size:13px;
+  margin-top:10px;
   span{
-    color:#508986;
+    color:#158a87;
     display: block;
   }
 
@@ -681,7 +703,7 @@
   margin-bottom:5px;
   &:hover{
     color:#e39f2c;
-    text-decoration:underline;
+    text-decoration:none;
   }
 
 }
@@ -694,6 +716,12 @@
   font-weight:900;
   padding:5px 10px;
   text-align:center;
+  display: inline-block;
+  text-decoration: none;
+  &:hover{
+    color:#fff;
+    text-decoration: none;
+  }
 }
 .hotel-options-list{
   margin:40px 0 0;

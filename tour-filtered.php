@@ -13,59 +13,180 @@
 	<h3>Шри-Ланка</h3>
 </div>
 
+<div class="tour-filter">
+	<a href="#" class="tour-filter--show"><span>Развернуть фильтр <i class="icons-arrow-down_white"></i></span></a>
+	<div class="tour-filter--container">
+		<div class="container">
+			<form action="" class="form-tourfilter">
+				<div class="row">
+					<div class="col-md-2 col-sm-6">
+						<h4 class="tour-filter--header">
+							<span class="icon icons-filter-eat"></span>
+							<span class="text">Питание</span>
+						</h4>
+						<div class="tour-filter--inputs">
+							<ul class="tour-filter--checkboxs">
+								<li>
+									<label class="custom-checkbox">
+										<input type="checkbox" name="eat1">
+										<span>Все включено</span>
+									</label>
+								</li>
+								<li>
+									<label class="custom-checkbox">
+										<input type="checkbox" name="eat2">
+										<span>2х разовое</span>
+									</label>
+								</li>
+								<li>
+									<label class="custom-checkbox">
+										<input type="checkbox" name="eat3">
+										<span>Без питания</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-6">
+						<h4 class="tour-filter--header">
+							<span class="icon icons-filter-class"></span>
+							<span class="text">Класс отеля</span>
+						</h4>
+						<div class="tour-filter--inputs">
+							<ul class="tour-filter--checkboxs">
+								<li>
+									<label class="custom-checkbox filter-checkbox_class">
+										<input type="checkbox" name="class1" checked>
+										<span>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+										</span>
+									</label>
+								</li>
+								<li>
+									<label class="custom-checkbox filter-checkbox_class">
+										<input type="checkbox" name="class2">
+										<span>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+										</span>
+									</label>
+								</li>
+								<li>
+									<label class="custom-checkbox filter-checkbox_class">
+										<input type="checkbox" name="class3">
+										<span>
+											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+										</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-5 col-sm-6">
+						<h4 class="tour-filter--header">
+							<span class="icon icons-filter-price"></span>
+							<span class="text">Цена в рублях</span>
+						</h4>
+						<div class="tour-filter--inputs">
+							<div class="tour-filter--price">
+								<div class="row">
+									<div class="col-md-4 col-sm-5 col-xs-5">
+										<input type="text" class="form-control tourFilterPriceMin" name="priceMin" value="20 000">
+									</div>
+									<div class="col-md-1 col-sm-2 col-xs-2 no-leftpadding no-rightpadding">
+										<span class="sep"></span>
+									</div>
+									<div class="col-md-4 col-sm-5 col-xs-5">
+										<input type="text" class="form-control tourFilterPriceMax" name="priceMax" value="88 000">
+									</div>
+								</div>
+								<div class="tour-filter--price-slider">
+									<input type="text" class="tour-filter-price" name="filter-price" value="" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<h4 class="tour-filter--header">
+							<span class="icon icons-filter-beach"></span>
+							<span class="text">Пляж</span>
+						</h4>
+						<div class="tour-filter--inputs">
+							<ul class="tour-filter--checkboxs">
+								<li>
+									<label class="custom-checkbox">
+										<input type="checkbox" name="beach1">
+										<span>Песок</span>
+									</label>
+								</li>
+								<li>
+									<label class="custom-checkbox">
+										<input type="checkbox" name="beach2">
+										<span>Первая линия</span>
+									</label>
+								</li>
+								<li>
+									<label class="custom-checkbox">
+										<input type="checkbox" name="beach3">
+										<span>Частный пляж отеля</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="tour-filter--line">
+			<a href="#" class="tour-filter--hide"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+		</div>
+	</div>
+</div>
+
 <div class="container" id="tour-filtered">
 	<div class="row">
-		<h2 class="col-xs-12 col-sm-6 col-md-6 roboto-light">Найдено 28 отелей</h2>
-
-		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-right" id="filters">
-			<div class="big">
-				<span class="xs-pull-right">
-					<span class="hidden-xxs">Валюта</span>
-          <label class="x-input-dd x-text closed hidden-xs" style="color:#965738;">
-      			<input type="hidden" placeholder="Выбрать город" value="3">
-      			<sub data-before="Из: ">RUB</sub>
-      				<span style="display: none;">
-      					<i data-value="1">RUB</i>
-      					<i data-value="2">EUR</i>
-      					<i data-value="3" class="selected">USD</i>
-      				</span>
-      		</label>
-				</span>
-				<span class="view-change xs-pull-left"><a class="active" href="#">Плиткой</a><a href="#">Списком</a></span>
-			</div>
-		</div>
+		<h2 class="col-xs-12 roboto-light tour-filtered--header">Найдено 28 отелей</h2>
 	</div>
 
 	<div class="row">
 
 		<?php for($i=1;$i<=9;$i++){ ?>
-		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+		<div class="col-xs-12 col-sm-6 col-md-6 col-large-4 tour-column">
 			<div class="tour-block tour-block-new">
-        <div class="tour-header row">
-          <h2 class="col-md-7">SIGMA RESORT <?php if(rand(0,1)) echo 'JOMTIEN PATTAYA';  ?></h2>
-          <div class="tour-rating col-md-5">
-            <div class="tour-rating--star"><img src="img/tour-rating.png" width="59" height="12" alt=""></div>
-            <span class="tour-rating--num">~ 4,2</span>
-          </div>
-        </div>
-        <div class="tour-desc">Таиланд, Паттайя, пляж Джомтьен, 1 линия, Песок, Оборудованный</div>
+		        <div class="tour-header row">
+		          <h2 class="col-md-7"><a href="#">SIGMA RESORT <?php if(rand(0,1)) echo 'JOMTIEN PATTAYA';  ?></a></h2>
+		          <div class="tour-rating col-md-5">
+		            <div class="tour-rating--star"><img src="img/tour-rating.png" width="59" height="12" alt=""></div>
+		            <span class="tour-rating--num">~ 4,2</span>
+		          </div>
+		        </div>
+		        <div class="tour-desc">Таиланд, Паттайя, пляж Джомтьен, 1 линия, Песок, Оборудованный</div>
 				<div class="thumb">
-					<img src="/DEMO/tour-item-1.jpg">
+					<a href="#" class="thumb-link"><img src="/DEMO/tour-item-1.jpg"></a>
 					<a href="#" class="like like-left"></a>
 				</div>
 				<div class="tour-footer">
-          <div class="col-md-4">
-            <div class="tour-eat">
-              <span>Завтраки</span>
-              19 ноября на 6 ночей
-            </div>
-          </div>
-          <div class="col-md-3">
-            <a href="#" class="tour-commentlink">Отзывы (14)</a>
-          </div>
-          <div class="col-md-5">
-            <div class="tour-price">34&nbsp;200&nbsp;<i class="fa fa-rub"></i></div>
-          </div>
+					<div class="col-sm-5">
+						<div class="tour-eat">
+						  <span>Завтраки</span>
+						  19 ноября на 6 ночей
+						</div>
+					</div>
+					<div class="col-sm-7">
+						<div class="text-right">
+							<a href="#" class="tour-commentlink">Отзывы (14)</a>
+						</div>
+						<div class="text-right">
+							<a href="#" class="tour-price">
+								<?php echo rand(1,50) . '&nbsp;' . rand(100,999); ?>&nbsp;200&nbsp;<i class="fa fa-rub"></i>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -73,4 +194,6 @@
 
 	</div>
 </div>
-<div class="more"><a href="#">Загрузить еще</a></div>
+<div class="more">
+	<a href="#">Загрузить еще</a>
+</div>

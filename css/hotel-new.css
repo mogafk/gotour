@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'border-radius'.
-        on line 48 of D:/WebServers/home/gotour/www/scss/hotel-new.scss, in `border-radius'
-        from line 48 of D:/WebServers/home/gotour/www/scss/hotel-new.scss
+        on line 59 of D:/WebServers/home/gotour/www/scss/hotel-new.scss, in `border-radius'
+        from line 59 of D:/WebServers/home/gotour/www/scss/hotel-new.scss
 
-43: 			@media screen and (max-width:767px){
-44: 				font-size:16px;
-45: 			}
-46: 		}
-47: 		.roundtour-place{
-48: 			@include border-radius(3px);
-49: 			&--submenu{
-50: 				color:#212121;
-51: 			}
-52: 		}
-53: 		.roundtour-date{
+54: 			@media screen and (max-width:767px){
+55: 				font-size:16px;
+56: 			}
+57: 		}
+58: 		.roundtour-place{
+59: 			@include border-radius(3px);
+60: 			&--submenu{
+61: 				color:#212121;
+62: 			}
+63: 		}
+64: 		.roundtour-date{
 
 Backtrace:
-D:/WebServers/home/gotour/www/scss/hotel-new.scss:48:in `border-radius'
-D:/WebServers/home/gotour/www/scss/hotel-new.scss:48
+D:/WebServers/home/gotour/www/scss/hotel-new.scss:59:in `border-radius'
+D:/WebServers/home/gotour/www/scss/hotel-new.scss:59
 C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:349:in `block in visit_mixin'
 C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/stack.rb:115:in `with_frame'
@@ -95,4 +95,4 @@ C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sass-3.4.20/vendor/listen/l
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'border-radius'.\A         on line 48 of D:/WebServers/home/gotour/www/scss/hotel-new.scss, in `border-radius'\A         from line 48 of D:/WebServers/home/gotour/www/scss/hotel-new.scss\A \A 43: 			@media screen and (max-width:767px){\A 44: 				font-size:16px;\A 45: 			}\A 46: 		}\A 47: 		.roundtour-place{\A 48: 			@include border-radius(3px);\A 49: 			&--submenu{\A 50: 				color:#212121;\A 51: 			}\A 52: 		}\A 53: 		.roundtour-date{"; }
+  content: "Error: Undefined mixin 'border-radius'.\A         on line 59 of D:/WebServers/home/gotour/www/scss/hotel-new.scss, in `border-radius'\A         from line 59 of D:/WebServers/home/gotour/www/scss/hotel-new.scss\A \A 54: 			@media screen and (max-width:767px){\A 55: 				font-size:16px;\A 56: 			}\A 57: 		}\A 58: 		.roundtour-place{\A 59: 			@include border-radius(3px);\A 60: 			&--submenu{\A 61: 				color:#212121;\A 62: 			}\A 63: 		}\A 64: 		.roundtour-date{"; }

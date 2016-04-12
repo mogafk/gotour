@@ -69,6 +69,7 @@ ini_set ( 'display_errors' , 1);
 <script src="js/hotel.js"></script>
 
 <script src="js/main.js"></script>
+<script src="js/tour-filter.js"></script>
 <?if(!isset($_GET['p'])):?>
 <script>
 	/*  FOOTER SCROLLSPY  */

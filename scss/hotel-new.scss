@@ -1,3 +1,14 @@
+@media (min-width:1200px){
+	.hotel-header, 
+	.hotel-slider--wrapper,
+	.hotel-info,
+	#hotel,
+	.hotel-bottom{
+		.container{
+			width:970px;
+		}
+	}
+}
 .hotel-search{
 	&--container{
 		background:url('../img/hotel-search-bg.jpg') top center no-repeat;

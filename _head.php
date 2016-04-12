@@ -122,7 +122,7 @@
 <link href="css/lib/ion.rangeSlider.css?ver=1.0" rel="stylesheet">
 <link href="css/lib/datepicker.css?ver=1.0" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" rel="stylesheet">
-<link href="css/new.css?ver=1.2" rel="stylesheet">
+<link href="css/new.css" rel="stylesheet">
 
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->

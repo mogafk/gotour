@@ -22,7 +22,11 @@
   }
 
 }
-
+@media (min-width:1440px){
+  .col-large-4{
+    width:33.33333333%;
+  }
+}
 @media screen and (max-width:1200px){
   .main-slider{
     .slick-dots{
@@ -628,6 +632,13 @@
       height:100%;
     }
 
+  }
+  .tour-footer .text-right{
+    text-align: left;
+  }
+  .tour-price{
+    display: block;
+    width:100%;
   }
 
 }
