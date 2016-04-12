@@ -28,26 +28,38 @@
 							<ul class="tour-filter--checkboxs">
 								<li>
 									<label class="custom-checkbox">
-										<input type="checkbox" name="eat1">
-										<span>Все включено</span>
+										<input type="checkbox" checked name="eat1">
+										<span>Завтраки</span>
 									</label>
 								</li>
 								<li>
 									<label class="custom-checkbox">
-										<input type="checkbox" name="eat2">
-										<span>2х разовое</span>
+										<input type="checkbox" checked name="eat2">
+										<span>Двухразовое</span>
 									</label>
 								</li>
 								<li>
 									<label class="custom-checkbox">
-										<input type="checkbox" name="eat3">
+										<input type="checkbox" checked name="eat3">
+										<span>Трёхразовое</span>
+									</label>
+								</li>
+								<li>
+									<label class="custom-checkbox">
+										<input type="checkbox" checked name="eat4">
+										<span>Всё включено</span>
+									</label>
+								</li>
+								<li>
+									<label class="custom-checkbox">
+										<input type="checkbox" name="eat5">
 										<span>Без питания</span>
 									</label>
 								</li>
 							</ul>
 						</div>
 					</div>
-					<div class="col-md-2 col-sm-6">
+					<div class="col-md-3 col-sm-6">
 						<h4 class="tour-filter--header">
 							<span class="icon icons-filter-class"></span>
 							<span class="text">Класс отеля</span>
@@ -62,6 +74,7 @@
 											<i class="fa fa-star" aria-hidden="true"></i>
 											<i class="fa fa-star" aria-hidden="true"></i>
 											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
 										</span>
 									</label>
 								</li>
@@ -69,6 +82,7 @@
 									<label class="custom-checkbox filter-checkbox_class">
 										<input type="checkbox" name="class2">
 										<span>
+											<i class="fa fa-star" aria-hidden="true"></i>
 											<i class="fa fa-star" aria-hidden="true"></i>
 											<i class="fa fa-star" aria-hidden="true"></i>
 											<i class="fa fa-star" aria-hidden="true"></i>
@@ -81,13 +95,22 @@
 										<span>
 											<i class="fa fa-star" aria-hidden="true"></i>
 											<i class="fa fa-star" aria-hidden="true"></i>
+											<i class="fa fa-star" aria-hidden="true"></i>
+										</span>
+									</label>
+								</li>
+								<li>
+									<label class="custom-checkbox">
+										<input type="checkbox" name="class4">
+										<span>
+											Аппартаменты / Виллы
 										</span>
 									</label>
 								</li>
 							</ul>
 						</div>
 					</div>
-					<div class="col-md-5 col-sm-6">
+					<div class="col-md-4 col-sm-6">
 						<h4 class="tour-filter--header">
 							<span class="icon icons-filter-price"></span>
 							<span class="text">Цена в рублях</span>
@@ -95,13 +118,13 @@
 						<div class="tour-filter--inputs">
 							<div class="tour-filter--price">
 								<div class="row">
-									<div class="col-md-4 col-sm-5 col-xs-5">
+									<div class="col-md-5 col-sm-5 col-xs-5">
 										<input type="text" class="form-control tourFilterPriceMin" name="priceMin" value="10 000">
 									</div>
-									<div class="col-md-1 col-sm-2 col-xs-2 no-leftpadding no-rightpadding">
+									<div class="col-md-2 col-sm-2 col-xs-2 no-leftpadding no-rightpadding">
 										<span class="sep"></span>
 									</div>
-									<div class="col-md-4 col-sm-5 col-xs-5">
+									<div class="col-md-5 col-sm-5 col-xs-5">
 										<input type="text" class="form-control tourFilterPriceMax" name="priceMax" value="15 000 000">
 									</div>
 								</div>
@@ -121,19 +144,19 @@
 								<li>
 									<label class="custom-checkbox">
 										<input type="checkbox" name="beach1">
-										<span>Песок</span>
+										<span>Первая пляжная линия</span>
 									</label>
 								</li>
 								<li>
 									<label class="custom-checkbox">
 										<input type="checkbox" name="beach2">
-										<span>Первая линия</span>
+										<span>Вторая пляжная линия</span>
 									</label>
 								</li>
 								<li>
 									<label class="custom-checkbox">
 										<input type="checkbox" name="beach3">
-										<span>Частный пляж отеля</span>
+										<span>Третья пляжная линия</span>
 									</label>
 								</li>
 							</ul>
