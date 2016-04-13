@@ -17,4 +17,8 @@ $(document).ready(function(){
 		},300);
 		return false;
 	});
+	setTimeout(hidePreload,1000);
+	function hidePreload(){
+		$('.tour-search-preload').fadeOut(500);
+	}
 });

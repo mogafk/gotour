@@ -1,0 +1,199 @@
+@import "mixin";
+@import "compass";
+@import "icons";
+
+// colors
+$color-dark:#323232;
+
+// fonts
+$font-roboto: 'Roboto';
+$font-museo: 'Museo Sans';
+$font-halv: 'helveticaneuecyr';
+
+.design{
+	background:url('../DEMO/design-tour.jpg') top center no-repeat;
+	top:-12px;
+	left:0;
+	position: absolute;
+	width:100%;
+	height:1670px;
+	display: block;
+	@include opacity(0.3);
+	z-index:2;
+}
+
+.tour-page{
+	padding:22px 0 0;
+	.container{
+		@media (min-width:992px) and (max-width:1440px){
+			width:970px;
+		}
+	}
+	&--title{
+		color:$color-dark;
+		font-size:30px;
+		font-family:$font-museo;
+		font-weight:900;
+		line-height:120%;
+		text-transform: uppercase;
+		margin:10px 0 0;
+	}
+	&--location{
+		margin:2px 0;
+		font-size:14px;
+		line-height: 120%;
+		font-family: $font-roboto;
+	}
+	&--rating{
+		display: inline-block;
+		.stars{
+			margin:0;
+			padding:0;
+			display: inline-block;
+			float:left;
+			li{
+				float:left;
+				list-style-type: none;
+				font-size:16px;
+				color:#f7e187;
+				margin:0 2px 0 5px;
+				@include transition(color .3s ease);
+			}
+
+		}
+		.number{
+			color:#626262;
+			font-family: $font-roboto;
+			font-size:19px;
+			line-height: 100%;
+			margin:0 10px;
+			display: inline-block;
+		}
+		&:hover{
+			.stars li{
+				color:#f99f12;
+			}
+		}
+	}
+	&--infoafter{
+		margin-top:15px;
+		margin-bottom:15px;
+	}
+	&--stages{
+		margin:0;
+		padding:0;
+		overflow: hidden;
+		li{
+			float:left;
+			list-style-type: none;
+		}
+
+	}
+	&--stage{
+		display: inline-block;
+		width:31px;
+		height:31px;
+		@include box-sizing;
+		border:1px solid #e0d8c5;
+		@include border-radius(31px);
+		text-align: center;
+		line-height:31px;
+		color:#cdc6b2;
+		font-family: $font-museo;
+		font-size:14px;
+		background:#fff;
+		margin-right:18px;
+		position: relative;
+		&:last-child{
+			margin-right:0;
+
+		}
+		&:before{
+			content:'';
+			width:18px;
+			height:1px;
+			background:#e0d8c5;
+			display: inline-block;
+			position: absolute;
+			right:100%;
+			top:50%;
+			margin:-1px 1px 0 0;
+		}
+		&:first-child{
+			&:before{
+				display: none;
+			}
+		}
+	}
+	&--stage_current{
+		width:auto;
+		background:#ebe5d6;
+		border-color:#ebe5d6;
+		color:#8f8c83;
+		font-weight:700;
+		padding:0 20px;
+	}
+	&-price{
+		margin:15px 0;
+		font-family:$font-roboto;
+		display: inline-block;
+		width:100%;
+		
+		&--header{
+			font-size:14px;
+			color:#7694b0;
+			margin-bottom:5px;
+		}
+		&--info{
+			overflow: hidden;
+			width:100%;
+			&-content{
+				float:left;
+				max-width:350px;
+				width:100%;
+				margin-right:18px;
+			}
+			&-button{
+				overflow: hidden;
+				padding-top:7px;
+			}
+		}
+		.price{
+			font-size:61px;
+			color:#7694b0;
+			font-weight:700;
+			line-height: 100%;
+			display: inline-block;
+			margin-bottom:10px;
+			.fa{
+				font-size:56px;
+				float:right;
+				margin:6px 0 0 13px;
+			}
+		}
+	}
+	&--includes{
+		position: relative;
+		color:#9f977f;
+		font-size:14px;
+		line-height:120%;
+		padding-left:55px;
+		margin:5px 0 0;
+		&:before{
+			content:'';
+			display: inline-block;
+			background:url('../img/hotel-tours-info.png');
+			width:32px;
+			height:32px;
+			position: absolute;
+			left:0;
+			top:0;
+		}
+	}
+	&-buy{
+		font-family: $font-museo;
+		font-size:18px;
+		font-weight:900;
+		text-transform: uppercase;
+	}
+}

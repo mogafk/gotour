@@ -172,6 +172,20 @@
 </div>
 
 <div class="container" id="tour-filtered">
+	<div class="tour-search-preload">
+		<div class="tour-search-preload--spinner">
+			<span class="icon"></span>
+			<span class="text">Загружаем туры на двоих</span>
+		</div>
+		<br>
+		<div class="tour-search-preload--advertising">
+			<img src="DEMO/preload-banner.png" alt="">
+		</div>
+		<br>
+		<div class="tour-search-preload--advertising video">
+			<iframe src="https://www.youtube.com/embed/F9B7g9-PkB8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
 	<div class="row">
 		<h2 class="col-xs-12 roboto-light tour-filtered--header">Найдено 28 отелей</h2>
 	</div>
