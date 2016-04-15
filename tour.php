@@ -75,14 +75,14 @@
           </div>
         </div>
         <div class="tour-page-slider hidden-xs">
-          <div class="slide"><a href="#"><img src="DEMO/tour-slider/slide1.jpg" alt=""></a></div>
-          <div class="slide"><a href="#"><img src="DEMO/tour-slider/slide2.jpg" alt=""></a></div>
-          <div class="slide"><a href="#"><img src="DEMO/tour-slider/slide3.jpg" alt=""></a></div>
-          <div class="slide"><a href="#"><img src="DEMO/tour-slider/slide4.jpg" alt=""></a></div>
-          <div class="slide"><a href="#"><img src="DEMO/tour-slider/slide4.jpg" alt=""></a></div>
-          <div class="slide"><a href="#"><img src="DEMO/tour-slider/slide3.jpg" alt=""></a></div>
-          <div class="slide"><a href="#"><img src="DEMO/tour-slider/slide2.jpg" alt=""></a></div>
-          <div class="slide"><a href="#"><img src="DEMO/tour-slider/slide1.jpg" alt=""></a></div>
+          <div class="slide"><a href="DEMO/comment-2.bak.jpg" class="fancybox" rel="gallery-tour"><img src="DEMO/comment-2.bak.jpg" alt=""></a></div>
+          <div class="slide"><a href="DEMO/tour-slider/slide2.jpg" class="fancybox" rel="gallery-tour"><img src="DEMO/tour-slider/slide2.jpg" alt=""></a></div>
+          <div class="slide"><a href="DEMO/tour-slider/slide3.jpg" class="fancybox" rel="gallery-tour"><img src="DEMO/tour-slider/slide3.jpg" alt=""></a></div>
+          <div class="slide"><a href="DEMO/tour-slider/slide4.jpg" class="fancybox" rel="gallery-tour"><img src="DEMO/tour-slider/slide4.jpg" alt=""></a></div>
+          <div class="slide"><a href="DEMO/tour-slider/slide4.jpg" class="fancybox" rel="gallery-tour"><img src="DEMO/tour-slider/slide4.jpg" alt=""></a></div>
+          <div class="slide"><a href="DEMO/tour-slider/slide3.jpg" class="fancybox" rel="gallery-tour"><img src="DEMO/tour-slider/slide3.jpg" alt=""></a></div>
+          <div class="slide"><a href="DEMO/tour-slider/slide2.jpg" class="fancybox" rel="gallery-tour"><img src="DEMO/tour-slider/slide2.jpg" alt=""></a></div>
+          <div class="slide"><a href="DEMO/tour-slider/slide1.jpg" class="fancybox" rel="gallery-tour"><img src="DEMO/tour-slider/slide1.jpg" alt=""></a></div>
         </div>
       </div>
     </div>

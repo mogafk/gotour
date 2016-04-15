@@ -651,9 +651,26 @@
     font-size:18px;
     font-weight:900;
     margin:0;
-    &:hover{
-      text-decoration: none;
+    position: relative;
+    width:100%;
+    a{
+      display: block;
+      width:100%;
+      background:#fff;
+      height:40px;
+      overflow: hidden;
+      top:0;
+      left:0;
+      @media screen and (max-width:767px){
+        height:auto;
+      }
+      @include transition(all .3s ease);
+      &:hover{
+        text-decoration: none;
+
+      }
     }
+
   }
 
 }

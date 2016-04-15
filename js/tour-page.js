@@ -10,7 +10,7 @@ $(document).ready(function(){
 				breakpoint : 991,
 				settings : {
 					arrows : false
-				}	
+				}
 			}
 		]
 	});
@@ -35,4 +35,23 @@ $(document).ready(function(){
 		$(this).closest('fieldset').find('.inputs-container').slideToggle(200);
 		return false;
 	});
+	pricePosition();
+	$(window).on('scroll',function(){
+		// 221
+		pricePosition();
+	});
+	function pricePosition(){
+		var scroll = $(document).scrollTop();
+		if(scroll > 100){
+			var top = scroll-100;
+			var marginTop = parseFloat($('footer').offset().top) - parseFloat($('.tour-page_2-price').innerHeight()) - 230;
+			console.log('top='+ top);
+			console.log('marginTop=' + marginTop);
+			if(top < marginTop){
+				$('.tour-page_2-price').css({top:top});
+			}
+		}else{
+			$('.tour-page_2-price').css({top:0});
+		}
+	}
 });

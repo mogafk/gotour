@@ -3056,8 +3056,28 @@
   font-size: 18px;
   font-weight: 900;
   margin: 0;
+  position: relative;
+  width: 100%;
 }
-.tour-header h2:hover, .tour-header a:hover {
+.tour-header h2 a, .tour-header a a {
+  display: block;
+  width: 100%;
+  background: #fff;
+  height: 40px;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 767px) {
+  .tour-header h2 a, .tour-header a a {
+    height: auto;
+  }
+}
+.tour-header h2 a:hover, .tour-header a a:hover {
   text-decoration: none;
 }
 

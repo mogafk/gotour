@@ -59,7 +59,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-6">
+					<div class="col-md-3 col-sm-6" style="min-height:196px">
 						<h4 class="tour-filter--header">
 							<span class="icon icons-filter-class"></span>
 							<span class="text">Класс отеля</span>
@@ -195,14 +195,26 @@
 		<?php for($i=1;$i<=9;$i++){ ?>
 		<div class="col-xs-12 col-sm-6 col-md-6 col-large-4 tour-column">
 			<div class="tour-block tour-block-new">
-		        <div class="tour-header row">
-		          <h2 class="col-md-7"><a href="#">SIGMA RESORT <?php if(rand(0,1)) echo 'JOMTIEN PATTAYA';  ?></a></h2>
-		          <div class="tour-rating col-md-5">
-		            <div class="tour-rating--star"><img src="img/tour-rating.png" width="59" height="12" alt=""></div>
-		            <span class="tour-rating--num">~ 4,2</span>
-		          </div>
-		        </div>
-		        <div class="tour-desc">Таиланд, Паттайя, пляж Джомтьен, 1 линия, Песок, Оборудованный</div>
+        <div class="tour-header row">
+          <div class="col-md-7">
+	          <h2>
+	            <?php
+	            if(rand(0,1)){
+	            	$header = "SIGMA RESORT";
+	            }else{
+	            	$header = "PORTO AZZURRO CLUB MARE Отели Австрия PORTO AZZURRO CLUB MARE Отели Австрия";
+	            }
+	            ?>
+		          <a href="#" title="<?php echo $header; ?>"><?php echo $header; ?></a>
+	          </h2>
+          </div>
+          <div class="tour-rating col-md-5">
+            <div class="tour-rating--star"><img src="img/tour-rating.png" width="59" height="12" alt=""></div>
+            <span class="tour-rating--num">~ 4,2</span>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="tour-desc">Таиланд, Паттайя, пляж Джомтьен, 1 линия, Песок, Оборудованный</div>
 				<div class="thumb">
 					<a href="#" class="thumb-link"><img src="/DEMO/tour-item-1.jpg"></a>
 					<a href="#" class="like like-left"></a>

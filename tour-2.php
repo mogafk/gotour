@@ -133,11 +133,10 @@
                   </fieldset>
                   <fieldset>
                     <h5 class="form-tourpage--header">
-                      Турист #1. <span class="hidden-xs">На него мы оформляем договор</span>
+                      Турист #2.
                       <a href="#" class="form-tourpage--header-toggle"><span class="icons-arrow-up_white"></span></a>
                     </h5>
                     <div class="inputs-container">
-                      <span class="visible-xs">На него мы оформляем договор</span>
                       <div class="form-group row">
                         <div class="col-sm-4 col-sm-offset-1 hidden-xs">
                           <label class="control-label">Фамилия</label>
@@ -204,7 +203,7 @@
                   <div class="visible-xs visible-sm">
                     <div class="row">
                       <div class="col-sm-11 col-sm-offset-1">
-                        <button class="btn btn-green tour-page-buy">перейти к оплате</button>  
+                        <button class="btn btn-green tour-page-buy">перейти к оплате</button>
                       </div>
                     </div>
                   </div>
@@ -212,7 +211,7 @@
               </div>
             </div>
           </div>
-        
+
       </div>
       <div class="col-md-4 text-center hidden-sm hidden-xs">
         <div class="tour-page_2-price">

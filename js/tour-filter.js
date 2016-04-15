@@ -44,10 +44,10 @@ $(document).ready(function(){
 				filterPrice.getPriceMax(value);
 			}
 		}
-		
+
 	};
 	var $filterSlider = $('.tour-filter-price');
-	if($('body').is('.tour-filter-price')){
+	if($('input').is('.tour-filter-price')){
 		$filterSlider.ionRangeSlider({
 			min: 0,
 			max: 15000000,
@@ -107,7 +107,7 @@ $(document).ready(function(){
 				var value = false;
 				if($elem.attr('type')=='checkbox'){
 					if($elem.is(':checked')){
-						value = true 
+						value = true
 					}
 				}
 				if($elem.attr('type')=='text'){
