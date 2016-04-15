@@ -1,0 +1,24 @@
+//добавить на страницу
+<nav id="selection-tour" class="navmenu navmenu-default navmenu-fixed-right offcanvas" role="navigation">
+  <div class="hotel-addcomment-bar">
+    <h3>Заполнить форму</h3>
+    <form class="hotel-addcomment-form">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Имя">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="E-mail">
+      </div>
+      <div class="form-group">
+        <h4>Новости какой страны<br> хотели бы получать?</h4>
+        <input type="text" class="form-control" placeholder="">
+      </div>
+      <div class="hotel-addcomment-btn">
+        <button class="btn btn-orange btn-block">Отправить</button>
+      </div>
+    </form>
+  </div>
+</nav>
+
+//обновить код кнопки
+<div class="btn btn-blue" data-recalc="false" data-toggle="offcanvas" data-target="#selection-tour" data-canvas="#site-wrap">Заполнить</div>
