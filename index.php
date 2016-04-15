@@ -70,6 +70,7 @@ ini_set ( 'display_errors' , 1);
 
 <script src="js/main.js"></script>
 <script src="js/tour-filter.js"></script>
+<script src="js/tour-page.js"></script>
 <?if(!isset($_GET['p'])):?>
 <script>
 	/*  FOOTER SCROLLSPY  */
