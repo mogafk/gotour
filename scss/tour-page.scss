@@ -147,7 +147,6 @@ $font-halv: 'helveticaneuecyr';
 		font-family:$font-roboto;
 		display: inline-block;
 		width:100%;
-
 		&--header{
 			font-size:14px;
 			color:#7694b0;
@@ -257,7 +256,6 @@ $font-halv: 'helveticaneuecyr';
 		margin:16px 0 27px;
 	}
 	&-includes{
-
 		&--header{
 			background:#3e5870;
 			.tab-header{
@@ -466,7 +464,6 @@ $font-halv: 'helveticaneuecyr';
 				width:100%;
 				font-size:17px !important;
 			}
-
 			&:before{
 				content:'';
 				width:107%;
@@ -486,7 +483,6 @@ $font-halv: 'helveticaneuecyr';
 				z-index:2;
 				background:#fff;
 				@include border-radius(5px 0 0 0);
-
 				text-align: left;
 				padding:10px 20px;
 				margin-bottom:35px;
@@ -641,7 +637,6 @@ $font-halv: 'helveticaneuecyr';
 		}
 	}
 	fieldset{
-
 	}
 
 	&--header{
@@ -667,6 +662,7 @@ $font-halv: 'helveticaneuecyr';
 			display: block;
 			position: absolute;
 			background:#f1eac8;
+			top:0;
 			top:0;
 		}
 		&_hide{
@@ -1053,7 +1049,6 @@ $font-halv: 'helveticaneuecyr';
 	.custom-checkbox_big{
 		span{
 			font-size:16px;
-
 		}
 	}
 }

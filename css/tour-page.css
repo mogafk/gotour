@@ -1034,6 +1034,7 @@
   position: absolute;
   background: #f1eac8;
   top: 0;
+  top: 0;
 }
 .form-tourpage--header_hide .form-tourpage--header-toggle {
   -moz-transform: rotate(180deg);
