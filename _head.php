@@ -112,7 +112,7 @@
 <link href="css/lib/bootstrap-datetimepicker.css?ver=1.0" rel="stylesheet">
 <link href="css/lib/selectize.bootstrap3.css?ver=1.0" rel="stylesheet">
 <link href="css/fonts.css?ver=1.0" rel="stylesheet">
-<link href="css/header.css?ver=1.0" rel="stylesheet">
+<link href="css/header.css" rel="stylesheet">
 <link href="css/footer.css?ver=1.0" rel="stylesheet">
 <link href="css/x-input.css?ver=1.0" rel="stylesheet">
 <link href="css/site.css?ver=1.0" rel="stylesheet">

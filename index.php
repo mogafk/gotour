@@ -36,7 +36,14 @@ ini_set ( 'display_errors' , 1);
 <script>document.write('<div id="preloader"><div></div></div>')</script>
 <div class="canvas" id="site-wrap">
 	<div id="site-overlay"></div>
-	<? include '_header.php'; ?>
+	<?
+    if(isset($_GET['p']) && file_exists($_GET['p'].'.php')){
+      include '_header.php';
+    }
+    else{
+      include '_header-main.php';
+    }
+  ?>
 
 	<?
 		if(isset($_GET['p']) && file_exists($_GET['p'].'.php')){
