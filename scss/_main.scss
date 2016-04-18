@@ -462,6 +462,12 @@
     text-decoration:none;
     color:#121212;
   }
+  .text{
+    display: block;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+  }
 
 }
 .roundtour-place--submenu{
@@ -530,6 +536,10 @@
   font-family: 'helveticaneuecyr';
   float:left;
   font-weight:300;
+  max-width:140px;
+  @media (min-width:1200px){
+    max-width:220px;
+  }
 }
 .roundtour-place--curort{
   margin:0;

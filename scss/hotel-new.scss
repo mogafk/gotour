@@ -1,5 +1,7 @@
+@import "mixin";
+
 @media (min-width:1200px){
-	.hotel-header, 
+	.hotel-header,
 	.hotel-slider--wrapper,
 	.hotel-info,
 	#hotel,
@@ -59,6 +61,9 @@
 			@include border-radius(3px);
 			&--submenu{
 				color:#212121;
+			}
+			&--info{
+				max-width:140px;
 			}
 		}
 		.roundtour-date{

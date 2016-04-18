@@ -239,7 +239,7 @@
                         <ul class="roundtour-place--list">
                           <?php
                           $icons = array('','home','location','aircraft');
-                          $curort = array('','Анапа','Аналипси','Evason Ana Mandara','Hostal Santa Ana','Ana Mandara Hue','Apatrments Ana');
+                          $curort = array('','Анапа','Аналипси','Evason Ana Mandara','Hostal Santa Ana Hostal Santa Ana','Ana Mandara Hue','Apatrments Ana');
                           $curortCountry = array('','Россия','Греция','Испания ЛЛарет-де-Мар','Вьетнам Фуванг','Черногория Котор');
                           for($i=1;$i<=20;$i++){ ?>
                           <li>

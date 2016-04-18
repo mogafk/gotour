@@ -964,6 +964,12 @@
   text-decoration: none;
   color: #121212;
 }
+.roundtour-place .text {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 
 .roundtour-place--submenu {
   position: absolute;
@@ -1045,6 +1051,12 @@
   font-family: 'helveticaneuecyr';
   float: left;
   font-weight: 300;
+  max-width: 140px;
+}
+@media (min-width: 1200px) {
+  .roundtour-place--info {
+    max-width: 220px;
+  }
 }
 
 .roundtour-place--curort {
@@ -1857,6 +1869,9 @@
 }
 .hotel-search--form .roundtour-place--submenu {
   color: #212121;
+}
+.hotel-search--form .roundtour-place--info {
+  max-width: 140px;
 }
 .hotel-search--form .roundtour-date {
   -moz-border-radius: 3px;
