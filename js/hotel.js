@@ -52,8 +52,13 @@ $(document).ready(function(){
 		$form.find('#adult').val(adults);
 	});
 	$('.hotel-comment--fulllink').click(function(){
-		$(this).prev().css({'max-height' : '100%'});
-		$(this).remove();
+		if(!$(this).hasClass('open')){
+			$(this).prev().css({'max-height' : '100%'});
+			$(this).addClass('open').text('Скрыть');
+		}else{
+			$(this).prev().css({'max-height' : '50px'});
+			$(this).removeClass('open').text('Читать отзыв');
+		}
 		return false
 	});
 // tour filtered
