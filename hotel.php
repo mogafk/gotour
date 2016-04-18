@@ -323,6 +323,9 @@
                 </div>
               </div>
             </div>
+            <input type="hidden" id="city-id" value="22">
+            <input type="hidden" id="place_id" value="405">
+            <input type="hidden" id="place_type" value="101">
           </form>
         </div>
         <!-- select date -->
