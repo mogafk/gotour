@@ -51,7 +51,12 @@ $(document).ready(function(){
 		$form.find('#children').val(children);
 		$form.find('#adult').val(adults);
 	});
-
+	$('.hotel-comment--fulllink').click(function(){
+		$(this).prev().css({'max-height' : '100%'});
+		$(this).remove();
+		return false
+	});
+// tour filtered
 	setTimeout(hidePreload,1000);
 	function hidePreload(){
 		$('.tour-search-preload').fadeOut(500);

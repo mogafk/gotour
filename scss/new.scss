@@ -339,6 +339,9 @@
 .hotel-comment--text{
   color:#585858;
   font-size:13px;
+  max-height:50px;
+  overflow: hidden;
+  text-overflow:ellipsis;
   p{
     margin-bottom:15px;
   }
