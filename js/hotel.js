@@ -20,8 +20,8 @@ $(document).ready(function(){
 	var hotelSearch = {};
 	var city,cityId,place,placeId,placeType,date,nights,adults,cityId;
 	var children = {};
-	$('.form-hotelsearch').on('submit',function(){
-		var $form = $(this);
+	$('.form-hotelsearch').on('submit',function(e){
+		var $form = $('.form-hotelsearch');
 		city = $form.find('.roundtour-city--select').text();
 		cityId = $form.find('#city-id').val();
 		place = $form.find('.roundtour-place .text').text();
@@ -48,8 +48,8 @@ $(document).ready(function(){
 			adults : adults,
 			children : children
 		}
-		console.log(hotelSearch);
-		return false;
+		$form.find('#children').val(children);
+		$form.find('#adult').val(adults);
 	});
 
 	setTimeout(hidePreload,1000);

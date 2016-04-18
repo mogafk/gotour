@@ -323,9 +323,15 @@
                 </div>
               </div>
             </div>
-            <input type="hidden" id="city-id" value="22">
-            <input type="hidden" id="place_id" value="405">
-            <input type="hidden" id="place_type" value="101">
+            <input id="city-id" type="hidden" name="city_id" value='832' >
+            <input id="place_id" type="hidden" name="place_id" value='4023'>
+            <input id="place_type" type="hidden" name="place_type" value='resort' >
+            <input id="nights_min" type="hidden" name="nights_min" >
+            <input id="nights_max" type="hidden" name="nights_max" >
+            <input id="date_min" type="hidden" name="date_min" >
+            <input id="date_max" type="hidden" name="date_max" >
+            <input id="children" type="hidden" name="children" >
+            <input id="adult" type="hidden" name="adult" value="2">
           </form>
         </div>
         <!-- select date -->
