@@ -10,7 +10,7 @@
 
 
 <div id="sub-header" style="background-image:url('/DEMO/sh-tour-filtered.jpg')">
-	<h3>Шри-Ланка</h3>
+	<h3><img src="img/flags/abhz.gif" alt=""> Шри-Ланка</h3>
 </div>
 
 <div class="tour-filter">
