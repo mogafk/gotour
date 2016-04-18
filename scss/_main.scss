@@ -550,8 +550,8 @@
   background:#fff;
   @include border-radius(5px);
   font-size:14px;
-  color:#121212;
-  text-decoration:none;
+  color:#121212 !important;
+  text-decoration:none !important;
   padding:9px 12px;
   @include box-sizing;
   height:43px;
@@ -564,8 +564,11 @@
     color:#121212;
   }
   .text{
-    display: inline-block;
+    display: block;
+    overflow: hidden;
     padding-top:3px;
+    text-overflow:ellipsis;
+    white-space: nowrap;
   }
 
 }

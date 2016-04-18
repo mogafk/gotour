@@ -73,6 +73,7 @@ ini_set ( 'display_errors' , 1);
 <script src="js/ion.rangeSlider.min.js?ver=1.0"></script>
 <script src="js/jquery.scrollbar.min.js?ver=1.0"></script>
 <script src="js/datepicker.js?ver=1.0"></script>
+<script src="js/base.js"></script>
 <script src="js/hotel.js"></script>
 
 <script src="js/main.js"></script>

@@ -11,7 +11,7 @@
 <nav id="hotel-comment" class="navmenu navmenu-default navmenu-fixed-right offcanvas" role="navigation">
   <div class="hotel-addcomment-bar">
     <h3>
-    Добавить отзыв 
+    Добавить отзыв
     <button href="#" class="hotel-comment--close" data-toggle="offcanvas" data-target="#hotel-comment" data-canvas="#site-wrap"><i class="fa fa-times"></i></button>
     </h3>
     <form class="hotel-addcomment-form">
@@ -262,7 +262,7 @@
                       <span class="icon icons-calendar_orange"></span>
                       <span class="text">
                         <span class="roundtour-date--months">Выберите дату</span>
-                        <span class="roundtour-date--nights"></span>
+                        <span class="roundtour-date--nights">и количество ночей</span>
                       </span>
                     </a>
                   </div>
@@ -333,7 +333,7 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-md-3 no-rightpadding"><h4>Выберите количество ночей:</h4></div>
-                    <div class="col-md-8">
+                    <div class="col-md-8 no-rightpadding">
                       <ul class="roundtour-date--night">
                         <?php for($i=2;$i<=20;$i++){ ?>
                         <li class="<?php if($i==7) {echo 'active';} ?>"><?php echo $i ?></li>
@@ -521,7 +521,7 @@
       </div>
 		</div>
 	</div>
-	
+
   <div class="block-hotel-comments">
     <div class="container">
       <h3>ОТЗЫВЫ ОБ ОТЕЛЕ GREEN WORLD HOTEL</h3>
