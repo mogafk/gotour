@@ -13,6 +13,7 @@
 	<h3><img src="img/flags/abhz.gif" alt=""> Шри-Ланка</h3>
 </div>
 
+<div class="tour-filter-height"></div>
 <div class="tour-filter">
 	<a href="#" class="tour-filter--show"><span>Развернуть фильтр <i class="icons-arrow-down_white"></i></span></a>
 	<div class="tour-filter--container">

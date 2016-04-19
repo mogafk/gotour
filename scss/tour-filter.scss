@@ -3,6 +3,17 @@
 	display: block;
 	width:100%;
 	min-height:42px;
+	background:#fff;
+	&-height{
+		display: none;
+		height:226px;
+	}
+	&_fixed{
+		position: fixed;
+		top:63px;
+		left:0;
+		z-index:4;
+	}
 	@media (min-width:1200px) and (max-width:1440px){
 		.container{
 			width:970px;
@@ -114,7 +125,7 @@
 		.text{
 			margin-left:15px;
 			display: inline-block;
-			
+
 		}
 	}
 	&--checkboxs{

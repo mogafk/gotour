@@ -1,4 +1,70 @@
 $(document).ready(function(){
+	var filter = {
+		$filter : $('.tour-filter'),
+		$filterHeight : $('.tour-filter-height'),
+		position : $('.tour-filter').offset().top,
+		scrollDocument : function(){
+			return $(document).scrollTop();
+		},
+		show : function(){
+			$('.tour-filter--container').stop(true).slideDown(200);
+			this.$filterHeight.stop(true).animate({
+				'height' : 226
+			},200);
+			$('.tour-filter--show').stop(true).animate({'opacity' : 0},150);
+		},
+		hide : function(){
+			$('.tour-filter--container').stop(true).slideUp(200);
+			this.$filterHeight.stop(true).animate({
+				'height' : 42
+			},200);
+			$('.tour-filter--show').delay(150).stop(true).animate({'opacity' : 1},150);
+		},
+		scroll : function(){
+			this.logicFixed();
+		},
+		logicFixed : function(){
+			if(this.scrollDocument() > this.position - 63){
+				if($(window).width()>991){
+					this.addFixed();
+				}else{
+					this.removeFixed();
+				}
+			}else{
+				this.removeFixed();
+			}
+		},
+		addFixed : function(){
+			this.$filter.addClass('tour-filter_fixed');
+			this.$filterHeight.fadeIn(0);
+		},
+		removeFixed : function(){
+			this.$filterHeight.fadeOut(0);
+			this.$filter.removeClass('tour-filter_fixed');
+		},
+		resize : function(){
+			this.logicFixed();
+		},
+		init : function(){
+			this.resize();
+		}
+	};
+	// end filter object
+	filter.init();
+	$('.tour-filter--hide').click(function(){
+		filter.hide();
+		return false;
+	});
+	$('.tour-filter--show').click(function(){
+		filter.show();
+		return false;
+	});
+	$(window).on('scroll', function(){
+		filter.scroll();
+	});
+	$(window).on('resize', function(){
+		filter.resize();
+	});
 	var filterPrice = {
 		$priceMin : $('.tourFilterPriceMin'),
 		$priceMax : $('.tourFilterPriceMax'),
@@ -122,16 +188,6 @@ $(document).ready(function(){
 			console.clear();
 			console.log(filterValue);
 		}
-		$('.tour-filter--hide').click(function(){
-			$('.tour-filter--container').stop(true).slideUp(200);
-			$('.tour-filter--show').delay(150).stop(true).animate({'opacity' : 1},150);
-			return false;
-		});
-		$('.tour-filter--show').click(function(){
-			$('.tour-filter--container').stop(true).slideDown(200);
-			$('.tour-filter--show').stop(true).animate({'opacity' : 0},150);
-			return false;
-		});
 	}
 
 });
