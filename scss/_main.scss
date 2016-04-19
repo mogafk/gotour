@@ -504,7 +504,8 @@
 }
 
 .roundtour-place--wrapper{
-  height:300px;
+  height:auto;
+  max-height:300px;
 }
 .roundtour-place--list{
   padding:0;
