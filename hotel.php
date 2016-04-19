@@ -71,15 +71,14 @@
         <textarea class="form-control" placeholder="Общее впечатление" rows="3"></textarea>
       </div>
       <div class="hotel-addcomment-photos">
-        <div class="hotel-addcomment-linephoto">
-          <?php for($i=1;$i<=3;$i++){ ?>
-          <div class="hotel-addcomment-item">
-            <div class="hotel-addcomment-photo">
-              <span class="hotel-addcomment-photo--text">Загрузить<br>фото</span>
-            </div>
+        <?php for($i=0;$i<3;$i++){ ?>
+        <div class="hotel-addcomment-item">
+          <div class="hotel-addcomment-photo">
+            <span class="hotel-addcomment-photo--text">Загрузить<br>фото</span>
+            <input type="file" name="photo<?php echo $i; ?>" accept="image/*">
           </div>
-          <?php } ?>
         </div>
+        <?php } ?>
       </div>
       <a href="#" class="hotel-addcomment-addphoto">добавить Еще фото</a>
       <div class="hotel-addcomment-btn">
