@@ -74,8 +74,9 @@
         <?php for($i=0;$i<3;$i++){ ?>
         <div class="hotel-addcomment-item">
           <div class="hotel-addcomment-photo">
+            <a href="#" class="hotel-addcomment-photo--remove"><i class="fa fa-times" aria-hidden="true"></i></span></a>
             <span class="hotel-addcomment-photo--text">Загрузить<br>фото</span>
-            <input type="file" name="photo<?php echo $i; ?>" accept="image/*">
+            <input type="file" class="hotel-addcomment-photo--input" name="photo<?php echo $i; ?>" accept="image/*">
           </div>
         </div>
         <?php } ?>
